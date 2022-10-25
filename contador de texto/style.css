@@ -1,3 +1,4 @@
+/* " * " es un selector universal que selecciona todos los elementos  */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 body {
     font-family: sans-serif;
     display: grid;
+    /* Setting the height of the body to 100% of the viewport height. */
     height: 100vh;
     place-items: center;
     background: #a0eeff;
@@ -63,14 +65,3 @@ textarea {
     }
 }
 
-/*some css features alternative to javascript we wrote*/
-
-/*show status bar when textarea gets focus*/
-/*textarea:focus + .status{
-              opacity: 1;
-              background: #45ddff;
-          }*/
-/*hide status bar when textarea value is 0*/
-/*textarea:placeholder-shown + .status{
-              opacity: 0;
-          }*/
