@@ -1,0 +1,361 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #346694;
+    padding: 16px 0;
+}
+
+header h1 {
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin: 0;
+}
+
+nav {
+    background-color: #87AAD5;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+
+}
+
+nav ul li a:hover {
+    /* background-color: rgba(0,0,0,0.3); */
+    background-color: #4c76a5;
+}
+
+nav ul li a.active {
+    background-color: #4c76a5;
+}
+
+footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    /*1°arriba-abajo     2°laterales*/
+    margin-top: 20px;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+.homeimg img {
+    max-width: 100%;
+}
+
+.bienvenidos {
+    width: 75%;
+    /* background-color: turquoise; */
+    padding-right: 16px;
+}
+
+.testimonios {
+    width: 25%;
+    /* background-color: lightgray; */
+}
+
+.columnas {
+    display: flex;
+}
+
+.testimonio {
+    background-color: lightgray;
+    padding: 16px;
+}
+
+.testimonio .cita {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+}
+
+.historia p {
+    font-size: 13px;
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+    /* para que no se le sume el padding y los bordes a la caja y se ajuste*/
+}
+
+.persona img {
+    border-radius: 50%;
+    max-width: 65%;
+    box-shadow: 0 0 5px black;
+    margin-top: 13px;
+    margin: 13px 0 16px;
+    /*arriba, abajo laterales*/
+}
+
+.persona h5,
+.persona h6 {
+    color: #2a64a1;
+    font-weight: normal;
+    margin: 0;
+}
+
+.persona h5 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.persona h6 {
+    font-style: italic;
+}
+
+.persona p {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.servicio {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 16px 0;
+    padding: 16px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.servicio .info h4 {
+    color: #2e64a1;
+    font-size: 20px;
+    font-weight: 500;
+    font-size: italic;
+    border-bottom: 1px solid #2a64a1;
+    padding-bottom: 8px;
+}
+
+.servicio img {
+    max-width: 225px;
+    display: block;
+    border-radius: 15px;
+}
+
+.servicio:nth-child(even) {
+    /*hijos pares*/
+    flex-direction: row-reverse;
+}
+
+.contacto {
+    display: flex;
+    gap: 25px;
+}
+
+.contacto section {
+    width: 100%;
+}
+
+.datos p {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p label {
+    min-width: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 100px;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario input[type="submit"] {
+    background-color: #2fa9be;
+    box-shadow: 0 0 7px gray;
+    font-size: 14px;
+    width: auto;
+    color: white;
+    /* margin-left: 80px; */
+    position: relative;
+    left: 415px;
+    transition: all 0.3s ease;
+
+}
+
+/* esta es otra forma de acomodar el boton hacia el final */
+/* .formulario p{
+    display: flex;
+    justify-content: end;
+} */
+
+.formulario input[type="submit"]:hover {
+    background-color: #2a64a1;
+    cursor: pointer;
+}
+
+.links li {
+
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.links li-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.links li-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.links li:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 550px) {
+    /* body{
+        background-color: red;
+    } */
+    .columnas {
+        flex-direction: column;
+    }
+
+    .bienvenidos,
+    .testimonios {
+        width: 100%;
+    }
+
+    main.holder {
+        padding-left: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* .testimonios{
+        display: none;
+    } */
+
+    .personas{
+        flex-wrap: wrap;
+    }
+    .persona{
+        width: 47%;
+        margin-bottom:10px ;
+    }
+
+    .servicio,
+    .servicio:nth-child(even){
+        flex-direction: column;
+    }
+
+    .historia h2{
+        font-size: 30px;
+        font-style:italic;
+        font-weight: 600;
+    }
+    .historia p{
+        font-size: 20px;
+    }
+
+    /* .servicio img{
+        width: 90%;
+        max-width: 100%;
+    } */
+
+    .contacto {
+        flex-direction: column;
+    }
+}
