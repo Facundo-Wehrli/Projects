@@ -1,4 +1,4 @@
-/* Declaring variables. */
+// declaro las variables
 let stats = document.querySelector('.status');
 let text = document.getElementById('text');
 let char = document.getElementById('char');
@@ -8,19 +8,25 @@ let symbols = document.getElementById('symbols');
 
 
 function count() {
-    /* Checking if the textarea is empty. If it is, it hides the stats. */
+    //verificando si el textarea está vacío, si lo está oculta los stats
     if (text.value.length === 0) {
         stats.style.display = "none";
     }
  
     else {
-       /* Making the stats visible. */
+       /* muestro los stats */
         stats.style.display = "block";
-        char.innerHTML = text.value.length + " Caracteres" //char
-        /* Counting the words. */
-        words.innerHTML = text.value.trim().split(/\s+/).length + " Palabras"; //words
-        lines.innerHTML = text.value.split("\n").length + " Líneas"; //lines
+        // contanto los caracteres
+        char.innerHTML = text.value.length + " Caracteres" 
+        /* Contando las palabras */
+            //.split es un método que divide un string en un array de substrings, y retorna un nuevo array,
+            //.trim elimina los espacios en blanco que haya al principio o al final que haya en un string
+        words.innerHTML = text.value.trim().split(/\s+/).length + " Palabras"; 
+        // contando las líneas
+        lines.innerHTML = text.value.split("\n").length + " Líneas"; 
+        // contando los símbolos
         symbols.innerHTML = text.value.split(/[!@#$%^&*+()_={};:'"<>.,?/-]/).length + " Símbolos"
     }
 }
+//cuando ocurra el evento input llamo a la función count
 text.addEventListener("input", count);
