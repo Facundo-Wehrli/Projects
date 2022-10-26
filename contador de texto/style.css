@@ -59,6 +59,7 @@ textarea {
     transition: 1s;
 }
 
+/* Making the container width 100% when the screen is less than 20rem. */
 @media (max-width: 20rem) {
     .container {
         width: 100%;
