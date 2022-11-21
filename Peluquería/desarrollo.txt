@@ -1,0 +1,6 @@
+primero el html5 bien estructurado.
+después el css
+agregarle algo de js
+
+después agregarle base sql o con spring
+y react
