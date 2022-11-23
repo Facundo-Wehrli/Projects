@@ -1,3 +1,7 @@
+1) FIRST  MOBILE así que primero realizar un diseño para celular; en principio solo será un template, es decir, la página no tendrá ninguna funcionalidad.
+
+luego de que el template en celu y en pc funcione le empezamos a meter javascript y back-end.
+
 primero el html5 bien estructurado.
 después el css
 agregarle algo de js
