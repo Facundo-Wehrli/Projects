@@ -19,6 +19,7 @@ var GestorEstudiantes = {
         var nombre = document.getElementById('nombre');
         var nota = document.getElementById('nota');
 
+       /* Creo un nuevo estudiante y se agrega a la tabla */
         if (codigo.value && nombre.value && nota.value) {
             if(parseInt(codigo.value) > 0) {
                 if(parseFloat(nota.value) >= 0 && parseFloat(nota.value) <= 5.0) {
@@ -55,6 +56,7 @@ var GestorEstudiantes = {
             alert('Todos los campos son obligatorios');
         }
     },
+    /*calculo el promedio de las notas */
     calcularNotaPromedio: function () {
         var sumaNotas = 0.0;
 
@@ -64,6 +66,7 @@ var GestorEstudiantes = {
 
         alert("La nota promedio es: " + (sumaNotas / GestorEstudiantes.estudiantes.length).toFixed(2));
     },
+  /* Calcula la nota mayor de los estudiantes*/
     calcularNotaMayor: function () {
         var indiceNotaMayor = 0;
         var notaMayor = GestorEstudiantes.estudiantes[indiceNotaMayor].nota;
@@ -77,6 +80,7 @@ var GestorEstudiantes = {
 
         alert("El estudiante " + GestorEstudiantes.estudiantes[indiceNotaMayor].nombre + " tiene la nota mayor: " + notaMayor);
     },
+   /* calcula la nota menor de los estudiantes. */
     calcularNotaMenor: function () {
         var indiceNotaMenor = 0;
         var notaMenor = GestorEstudiantes.estudiantes[indiceNotaMenor].nota;
@@ -90,6 +94,7 @@ var GestorEstudiantes = {
 
         alert("El estudiante " + GestorEstudiantes.estudiantes[indiceNotaMenor].nombre + " tiene la nota menor: " + notaMenor);
     },
+  /*Verificando que el estudiante exista en el array*/
     estudianteExiste: function(codigo){
         for(var i = 0; i < this.estudiantes.length; ++i){
             if(codigo === this.estudiantes[i].codigo){
